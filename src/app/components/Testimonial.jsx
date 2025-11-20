@@ -3,7 +3,6 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 const Testimonials = () => {
@@ -63,15 +62,15 @@ const Testimonials = () => {
   };
   return (
     <div id="testimonials" className="pb-30 px-[9%] scroll-mt-30">
-      <motion.h2
+      <h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
         className="text-center text-5xl font-ovo"
       >
         Testimonials
-      </motion.h2>
-      <motion.p
+      </h2>
+      <p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.5 }}
@@ -80,7 +79,7 @@ const Testimonials = () => {
         Working with Toymur was an excellent experience. His technical skills
         and dedication to project quality are truly top-notch. I highly
         recommend his services for any complex development work.
-      </motion.p>
+      </p>
       <Slider {...settings}>
         {Testimonial.map((explorer, index) => {
           return (

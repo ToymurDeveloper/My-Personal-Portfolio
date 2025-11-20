@@ -2,36 +2,35 @@ import { assets, serviceData } from "../../assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { motion } from "motion/react";
 import { useTheme } from "./ThemeProvider";
 
 const Services = () => {
   const { isDark } = useTheme();
   return (
-    <motion.div
+    <div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="services"
       className="w-full px-[12%] py-10 scroll-mt-20 "
     >
-      <motion.h4
+      <h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
         className="text-center text-lg mb-2 font-ovo"
       >
         What I offer
-      </motion.h4>
-      <motion.h2
+      </h4>
+      <h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center text-5xl font-ovo"
       >
         My Services
-      </motion.h2>
-      <motion.p
+      </h2>
+      <p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.5 }}
@@ -40,8 +39,8 @@ const Services = () => {
         I am a frontend and backend developer from Dhaka, Bangladesh with 5
         years of experience in multiple marketplace like Fiverr, Upwork,
         Freelancer.com.
-      </motion.p>
-      <motion.div
+      </p>
+      <div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.7 }}
@@ -73,8 +72,8 @@ const Services = () => {
             </Link>
           </a>
         ))}
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

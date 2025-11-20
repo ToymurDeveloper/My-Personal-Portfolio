@@ -3,7 +3,6 @@ import { Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { assets } from "../../assets/assets";
 import Image from "next/image";
-import { motion } from "motion/react";
 
 export default function Header() {
   return (
@@ -17,7 +16,7 @@ export default function Header() {
           <div className="space-y-6">
             {/* Main Heading */}
             <div className="space-y-4">
-              <motion.h1
+              <h1
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -27,8 +26,8 @@ export default function Header() {
                 className="text-4xl lg:text-6xl font-bold font-ovo leading-tight"
               >
                 Hi! I'm <span className="text-blue-600">Sheikh Toymur</span>
-              </motion.h1>
-              <motion.div
+              </h1>
+              <div
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -47,9 +46,9 @@ export default function Header() {
                     className="inline-block w-6 ms-2 hand-custom-position"
                   />
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
+              <div
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -60,11 +59,11 @@ export default function Header() {
               >
                 <MapPin className="w-5 h-5 " />
                 <span>From Asia, Bangladesh.</span>
-              </motion.div>
+              </div>
             </div>
 
             {/* Description */}
-            <motion.p
+            <p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
@@ -87,11 +86,11 @@ export default function Header() {
                 People Per Hour
               </span>{" "}
               <span>and out of the marketplace</span>.
-            </motion.p>
+            </p>
 
             {/* Connect Button */}
             <div className="flex flex-col xs-flex-row pt-4 gap-5">
-              <motion.a
+              <a
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -108,8 +107,8 @@ export default function Header() {
                     className="w-4"
                   />
                 </button>
-              </motion.a>
-              <motion.a
+              </a>
+              <a
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -122,7 +121,7 @@ export default function Header() {
                   <span>my resume</span>
                   <Image src={assets.download_icon} alt="" className="w-4" />
                 </button>
-              </motion.a>
+              </a>
             </div>
           </div>
 
@@ -135,7 +134,7 @@ export default function Header() {
                   {/* Placeholder for profile image */}
                   <div className="text-center text-gray-500">
                     <div className="w-50 h-50 lg:h-68 lg:w-68 rounded-full mx-auto">
-                      <motion.div
+                      <div
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}
                         transition={{
@@ -145,14 +144,14 @@ export default function Header() {
                         }}
                       >
                         <Image src={assets.profile_round} alt="" />
-                      </motion.div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Experience Badge */}
-              <motion.div
+              <div
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
@@ -166,10 +165,10 @@ export default function Header() {
                     Years Exp.
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Available Badge */}
-              <motion.div
+              <div
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
@@ -179,7 +178,7 @@ export default function Header() {
                 <span className="text-sm font-outfit font-medium text-gray-900">
                   Available
                 </span>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>

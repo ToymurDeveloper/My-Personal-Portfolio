@@ -1,6 +1,5 @@
 import { CheckCircle, Send } from "lucide-react";
 import React from "react";
-import { motion } from "motion/react";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -34,30 +33,30 @@ const Contact = () => {
   };
 
   return (
-    <motion.div
+    <div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="contact"
       className='w-full px-[5%] pb-5 scroll-mt-32 bg-[url("/assets/images/footer-bg-color.png")] dark:bg-none bg-no-repeat bg-center bg-size-[90%_auto]'
     >
-      <motion.h4
+      <h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
         className="text-center mb-2 text-lg font-ovo"
       >
         Connect with me
-      </motion.h4>
-      <motion.h2
+      </h4>
+      <h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center text-5xl font-ovo"
       >
         Get in touch
-      </motion.h2>
-      <motion.p
+      </h2>
+      <p
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.5 }}
@@ -65,9 +64,9 @@ const Contact = () => {
       >
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.
-      </motion.p>
+      </p>
 
-      <motion.form
+      <form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.5 }}
@@ -100,7 +99,7 @@ const Contact = () => {
           name="message"
           disabled={isLoading}
         ></textarea>
-        <motion.button
+        <button
           whileHover={{ scale: 1.01 }}
           className="cursor-pointer py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 disabled:bg-gray-400 disabled:cursor-not-allowed dark:bg-transparent dark:border-[0.5px] dark:hover:bg-dark-hover"
           type="submit"
@@ -108,7 +107,7 @@ const Contact = () => {
         >
           {isLoading ? "Submitting..." : "Submit now"}
           <Send className="ms-1" size={17} />
-        </motion.button>
+        </button>
         {result === "success" && (
           <div className="mt-5 font-medium mx-auto font-ovo text-white py-2.5 rounded-md text-center w-72 text-lg bg-green-600">
             <div className="flex justify-center items-center">
@@ -117,8 +116,8 @@ const Contact = () => {
             </div>
           </div>
         )}
-      </motion.form>
-    </motion.div>
+      </form>
+    </div>
   );
 };
 

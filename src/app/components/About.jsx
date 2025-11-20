@@ -3,7 +3,6 @@ import { Code, GraduationCap, Briefcase } from "lucide-react";
 import Image from "next/image";
 import { assets } from "../../assets/assets";
 import { useTheme } from "./ThemeProvider";
-import { motion } from "motion/react";
 export const infoList = [
   {
     icon: assets.code_icon,
@@ -36,7 +35,7 @@ export const toolsData = [
 export default function AboutMe() {
   const { isDark } = useTheme();
   return (
-    <motion.div
+    <div
       id="about-me"
       className="scroll-mt-20 py-12"
       initial={{ opacity: 0 }}
@@ -46,26 +45,26 @@ export default function AboutMe() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <motion.p
+          <p
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-gray-500 dark:text-white/80 text-sm uppercase tracking-wide mb-2"
           >
             Introduction
-          </motion.p>
-          <motion.h1
+          </p>
+          <h1
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="text-5xl sm:text-6xl font-serif text-gray-900 dark:text-white/90"
           >
             About me
-          </motion.h1>
+          </h1>
         </div>
 
         {/* Main Content */}
-        <motion.div
+        <div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -74,7 +73,7 @@ export default function AboutMe() {
           {/* Profile Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <motion.div
+              <div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
@@ -85,18 +84,18 @@ export default function AboutMe() {
                   alt="Profile"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.05]"
                 />
-              </motion.div>
+              </div>
             </div>
           </div>
 
           {/* Text Content */}
-          <motion.div
+          <div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="space-y-8"
           >
-            <motion.p
+            <p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -106,17 +105,17 @@ export default function AboutMe() {
               professional expertise in the field. Throughout my career, I have
               had the privilege of collaborating with prestigious organizations,
               contributing to their success and growth.
-            </motion.p>
+            </p>
 
             {/* Info Cards */}
-            <motion.ul
+            <ul
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               className="grid sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-2xl"
             >
               {infoList.map(({ icon, iconDark, title, description }, index) => (
-                <motion.li
+                <li
                   key={index}
                   className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-dark-hover"
                 >
@@ -131,21 +130,21 @@ export default function AboutMe() {
                   <p className="text-sm text-gray-600 dark:text-white/80">
                     {description}
                   </p>
-                </motion.li>
+                </li>
               ))}
-            </motion.ul>
+            </ul>
 
             {/* Tools Section */}
 
-            <motion.h3
+            <h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-gray-700 text-xl font-ovo mb-4 dark:text-white/80"
             >
               Tools I use
-            </motion.h3>
-            <motion.ul
+            </h3>
+            <ul
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -159,10 +158,10 @@ export default function AboutMe() {
                   <Image src={tool} alt="Tool" className="w-6 sm:w-7" />
                 </li>
               ))}
-            </motion.ul>
-          </motion.div>
-        </motion.div>
+            </ul>
+          </div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

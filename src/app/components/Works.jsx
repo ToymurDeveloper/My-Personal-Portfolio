@@ -3,35 +3,34 @@ import Image from "next/image";
 import React from "react";
 import { useTheme } from "./ThemeProvider";
 
-import { motion } from "motion/react";
 
 const Works = () => {
   const { isDark } = useTheme();
   return (
-    <motion.div
+    <div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="my-work"
       className="w-full px-[12%] scroll-mt-30"
     >
-      <motion.h4
+      <h4
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
         className="text-center text-lg mb-2 font-ovo"
       >
         My Portfolio
-      </motion.h4>
-      <motion.h2
+      </h4>
+      <h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center text-5xl font-ovo"
       >
         My latest works
-      </motion.h2>
-      <motion.p
+      </h2>
+      <p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.5 }}
@@ -40,8 +39,8 @@ const Works = () => {
         I am a frontend and backend developer from Dhaka, Bangladesh with 5
         years of experience in multiple marketplace like Fiverr, Upwork,
         Freelancer.com.
-      </motion.p>
-      <motion.div
+      </p>
+      <div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.7 }}
@@ -66,8 +65,8 @@ const Works = () => {
             </div>
           </a>
         ))}
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.5 }}
@@ -80,8 +79,8 @@ const Works = () => {
           alt="Right arrow"
           className="w-4"
         />
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

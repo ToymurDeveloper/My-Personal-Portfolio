@@ -2,7 +2,6 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 import { useTheme } from "./ThemeProvider";
-import { motion } from "motion/react";
 import { Github, Linkedin, MapPin, MessageCircle, Phone } from "lucide-react";
 const Footer = () => {
   const { isDark } = useTheme();
@@ -11,15 +10,15 @@ const Footer = () => {
     <div className="mt-20">
       <div className="grid gap-10 sm:grid-cols-2">
         <div className="text-center">
-          <motion.h1
+          <h1
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-3xl font-extrabold font-ovo mb-2"
           >
             Toymur i<span className="text-red-500 ms-1">.</span>
-          </motion.h1>
-          <motion.div
+          </h1>
+          <div
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
@@ -27,8 +26,8 @@ const Footer = () => {
           >
             <MapPin size={20} className="inline-block me-1" />
             <span>Dhaka, Bangladesh</span>
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
@@ -42,8 +41,8 @@ const Footer = () => {
               />
               sktaimur296@gmail.com
             </a>
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.9, duration: 0.5 }}
@@ -57,21 +56,21 @@ const Footer = () => {
               />
               <h4 className="inline-block">WhatsApp: +8801914653199</h4>
             </a>
-          </motion.div>
+          </div>
         </div>
 
         <div className="w-max m-auto">
-          <motion.h3
+          <h3
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4"
           >
             Find me
-          </motion.h3>
+          </h3>
           <ul className="space-y-2">
             <li className="text-gray-600 dark:text-gray-300 transition duration-150 hover:text-red-500">
-              <motion.a
+              <a
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
@@ -82,10 +81,10 @@ const Footer = () => {
               >
                 <Github size={20} className="mr-2" />
                 <span className="font-medium">GitHub</span>
-              </motion.a>
+              </a>
             </li>
             <li className="text-gray-600 dark:text-gray-300 transition duration-150 hover:text-red-500">
-              <motion.a
+              <a
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
@@ -96,11 +95,11 @@ const Footer = () => {
               >
                 <MessageCircle size={20} color="#25D366" className="mr-2" />
                 <span className="font-medium">WhatsApp</span>
-              </motion.a>
+              </a>
             </li>
 
             <li className="text-gray-600 dark:text-gray-300 transition duration-150 hover:text-red-500">
-              <motion.a
+              <a
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.5 }}
@@ -111,7 +110,7 @@ const Footer = () => {
               >
                 <Linkedin size={20} className="mr-2 text-[#0A66C2]" />
                 <span className="font-medium">LinkedIn</span>
-              </motion.a>
+              </a>
             </li>
           </ul>
         </div>
