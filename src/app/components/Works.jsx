@@ -53,16 +53,45 @@ const Works = () => {
           //   className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
           //   style={{ backgroundImage: `url(${projects.bgImage})` }}
           // >
+          // <a
+          //   href="https://github.com/ToymurDeveloper"
+          //   target="_blank"
+          //   key={index}
+          //   className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
+          // >
+          //   <div
+          //     className="absolute inset-0 bg-cover bg-center group-hover:scale-[1.04] transition-transform duration-500"
+          //     style={{ backgroundImage: `url(${projects.bgImage})` }}
+          //   ></div>
+
+          // <a
+          //   href="https://github.com/ToymurDeveloper"
+          //   target="_blank"
+          //   key={index}
+          //   className="aspect-square rounded-lg relative cursor-pointer group overflow-hidden"
+          // >
+          //   <div
+          //     className="absolute inset-0 bg-cover bg-center group-hover:scale-[1.04] transition-transform duration-500 origin-center"
+          //     style={{ backgroundImage: `url(${projects.bgImage})` }}
+          //   ></div>
+
           <a
             href="https://github.com/ToymurDeveloper"
             target="_blank"
             key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
+            className="aspect-square rounded-lg relative cursor-pointer group overflow-hidden"
           >
+            {/* Background image with scale fix */}
             <div
-              className="absolute inset-0 bg-cover bg-center group-hover:scale-[1.04] transition-transform duration-500"
-              style={{ backgroundImage: `url(${projects.bgImage})` }}
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-105"
+              style={{
+                backgroundImage: `url(${projects.bgImage})`,
+                transform: "scale(1.04)", // Slightly larger initial scale to prevent jump,
+              }}
             ></div>
+
+            {/* Optional: Add a smooth overlay */}
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500"></div>
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-0 right-0 mx-auto group-hover:-translate-y-1 duration-500 py-3 px-5 flex items-center justify-between">
               <div>
                 <h2 className="font-semibold">{projects.title}</h2>

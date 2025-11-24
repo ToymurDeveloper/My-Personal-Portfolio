@@ -95,7 +95,7 @@ export default function Navbar() {
 
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2 border border-gray-500 dark:border-gray-400 rounded-full ml-4 font-ovo text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+            className="hidden lg:flex items-center gap-3 px-10 py-2 border border-gray-500 dark:border-gray-400 rounded-full ml-4 font-ovo text-gray-700 dark:text-gray-300 hover:bg-lime-300 dark:hover:bg-dark-hover transition-colors"
           >
             Contact{" "}
             <Image
