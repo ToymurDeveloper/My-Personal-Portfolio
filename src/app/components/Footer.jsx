@@ -74,7 +74,7 @@ const Footer = () => {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                href="https://github.com/Taimur496"
+                href="https://github.com/ToymurDeveloper"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -121,7 +121,7 @@ const Footer = () => {
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0 ">
           <li className="transition duration-200 hover:text-red-500 dark:hover:text-red-400">
             <a
-              href="https://github.com/Taimur496/Frontend-Ecommerce-website-DailyMart"
+              href="https://github.com/ToymurDeveloper"
               target="_blank"
               rel="noopener noreferrer"
             >

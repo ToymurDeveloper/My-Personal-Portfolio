@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { useTheme } from "./ThemeProvider";
 
-
 const Works = () => {
   const { isDark } = useTheme();
   return (
@@ -44,16 +43,26 @@ const Works = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.7 }}
-        className="grid grid-cols-auto my-10 gap-5 dark:text-gray-900"
+        className="grid grid-cols-auto my-10 gap-5 dark:text-gray-900 "
       >
         {workData.map((projects, index) => (
+          // <a
+          //   href="https://github.com/ToymurDeveloper"
+          //   target="_blank"
+          //   key={index}
+          //   className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
+          //   style={{ backgroundImage: `url(${projects.bgImage})` }}
+          // >
           <a
-            href="https://github.com/Taimur496"
+            href="https://github.com/ToymurDeveloper"
             target="_blank"
             key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${projects.bgImage})` }}
+            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
           >
+            <div
+              className="absolute inset-0 bg-cover bg-center group-hover:scale-[1.04] transition-transform duration-500"
+              style={{ backgroundImage: `url(${projects.bgImage})` }}
+            ></div>
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-0 right-0 mx-auto group-hover:-translate-y-1 duration-500 py-3 px-5 flex items-center justify-between">
               <div>
                 <h2 className="font-semibold">{projects.title}</h2>

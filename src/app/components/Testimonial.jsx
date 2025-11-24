@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 
 const Testimonials = () => {
-  const [slidesToShow, setSlidesToShow] = useState(1); // Start with mobile default
+  const [slidesToShow, setSlidesToShow] = useState(1);
 
   useEffect(() => {
     const handleResize = () => {
@@ -16,7 +16,7 @@ const Testimonials = () => {
       else setSlidesToShow(1);
     };
 
-    handleResize(); // Set initial value
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -76,15 +76,14 @@ const Testimonials = () => {
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-8 font-ovo"
       >
-        Working with Toymur was an excellent experience. His technical skills
-        and dedication to project quality are truly top-notch. I highly
-        recommend his services for any complex development work.
+        There are gathering some of my achieved reviews and recommendations from
+        the satisfied clients worldwide.
       </p>
       <Slider {...settings}>
         {Testimonial.map((explorer, index) => {
           return (
             <aside key={index} className="p-4">
-              <div className="p-8 rounded-lg bg-darkGray bg-opacity-10 shadow-md flex flex-col items-center justify-center">
+              <div className="py-8 rounded-lg bg-darkGray bg-opacity-10 shadow-md flex flex-col items-center justify-center">
                 <svg
                   id="Layer_1"
                   data-name="Layer 1"
@@ -95,7 +94,7 @@ const Testimonials = () => {
                   <path d="M336.63,250.54V33.44H553.71v217.1S587.7,503,364.37,512.71V392s85.76,35.63,74.55-141.49Z" />
                   <path d="M3.71,250.54V33.44H220.79v217.1S254.78,503,31.46,512.71V392S117.21,427.66,106,250.54Z" />
                 </svg>
-                <p className="testmo-custom-text text-darkGray1 text-center mt-6 mb-8">
+                <p className="px-4 testmo-custom-text text-darkGray1 text-center mt-6 mb-8">
                   {explorer.message}
                 </p>
                 <Image

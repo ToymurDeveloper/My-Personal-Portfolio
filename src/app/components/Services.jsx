@@ -48,7 +48,7 @@ const Services = () => {
       >
         {serviceData.map(({ icon, title, description, link }, index) => (
           <a
-            href="https://github.com/Taimur496"
+            href="https://github.com/ToymurDeveloper"
             target="_blank"
             key={index}
             className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 dark:hover:bg-dark-hover dark:hover:shadow-white"

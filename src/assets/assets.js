@@ -106,52 +106,53 @@ export const workData = [
 export const Testimonial = [
   {
     name: "James Smith",
-    location: "Asian Tourist",
+    location: "Canadian Client",
+
     img: "/assets/images/user1.png",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi inventore atque assumenda quidem.",
+      "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
   },
   {
     name: "William Brown",
-    location: "Asian Tourist",
+    location: "USA Client",
     img: "/assets/images/user2.png",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi inventore atque assumenda quidem.",
+      "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
   },
   {
     name: "George Johnson",
-    location: "Asian Tourist",
+    location: "Denmark Client",
     img: "/assets/images/user3.png",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi inventore atque assumenda quidem.",
-  },
-  {
-    name: "Sarah Jones",
-    location: "Asian Tourist",
-    img: "/assets/images/user4.png",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi inventore atque assumenda quidem.",
-  },
-  {
-    name: "Emily Clark",
-    location: "Asian Tourist",
-    img: "/assets/images/user5.png",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi inventore atque assumenda quidem.",
-  },
-  {
-    name: "Kristina Draper",
-    location: "Asian Tourist",
-    img: "/assets/images/tourist.jpg",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi inventore atque assumenda quidem.",
+      "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
   },
   {
     name: "Thomas Wilson",
-    location: "Asian Tourist",
+    location: "UK Client",
     img: "/assets/images/user6.png",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi inventore atque assumenda quidem.",
+      "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
+  },
+  {
+    name: "Sarah Jones",
+    location: "Swedish Client",
+    img: "/assets/images/user4.png",
+    message:
+      "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
+  },
+  {
+    name: "Emily Clark",
+    location: "Netharlands Client",
+    img: "/assets/images/user5.png",
+    message:
+      "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
+  },
+  {
+    name: "Jasmine Lee",
+    location: "Australian Client",
+    img: "/assets/images/tourist.jpg",
+    message:
+      "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
   },
 ];
 
