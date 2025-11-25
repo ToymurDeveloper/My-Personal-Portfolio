@@ -114,21 +114,21 @@ export const Testimonial = [
   },
   {
     name: "William Brown",
-    location: "USA Client",
+    location: "American Client",
     img: "/assets/images/user2.png",
     message:
       "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
   },
   {
     name: "George Johnson",
-    location: "Denmark Client",
+    location: "Danish Client",
     img: "/assets/images/user3.png",
     message:
       "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
   },
   {
     name: "Thomas Wilson",
-    location: "UK Client",
+    location: "British Client",
     img: "/assets/images/user6.png",
     message:
       "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
@@ -142,7 +142,7 @@ export const Testimonial = [
   },
   {
     name: "Emily Clark",
-    location: "Netharlands Client",
+    location: "Dutch Client",
     img: "/assets/images/user5.png",
     message:
       "His technical skills and dedication to project quality are truly top-notch. I highly recommend his services for any complex development work.",
